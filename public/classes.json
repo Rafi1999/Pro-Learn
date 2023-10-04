@@ -1,0 +1,58 @@
+[
+    {
+      "picture": "https://i.postimg.cc/3NsXqXq5/french-1.webp",
+      "name": "French for Beginners",
+      "instructorName": "Sophie Martin",
+      "availableSeats": 20,
+      "price": 19.99
+    },
+    {
+      "picture": "https://i.postimg.cc/tgbjj867/istockphoto-1055903384-612x612-1.jpg",
+      "name": "Spanish Conversation",
+      "instructorName": "Carlos Gonzalez",
+      "availableSeats": 15,
+      "price": 29.99
+    },
+    {
+      "picture": "https://i.postimg.cc/PrmgX2Q7/bigstock-german-language-illustration-279285700.jpg",
+      "name": "German Grammar Masterclass",
+      "instructorName": "Hans Schmidt",
+      "availableSeats": 12,
+      "price": 49.99
+    },
+    {
+      "picture": "https://i.postimg.cc/23R3421J/bigstock-italian-il-lo-la-ciao-ver-287492698.jpg",
+      "name": "Italian Pronunciation Workshop",
+      "instructorName": "Giulia Rossi",
+      "availableSeats": 10,
+      "price": 39.99
+    },
+    {
+      "picture": "https://i.postimg.cc/zvcWgCNH/Difference-between-Hiragana-and-Katakana-in-Japanese-Language.jpg",
+      "name": "Japanese Writing Fundamentals",
+      "instructorName": "Naomi Tanaka",
+      "availableSeats": 8,
+      "price": 59.99
+    },
+    {
+      "picture": "https://i.postimg.cc/KjMc0BLM/learning-the-chinese-language.jpg",
+      "name": "Mandarin Chinese Speaking Practice",
+      "instructorName": "Li Wei",
+      "availableSeats": 25,
+      "price": 49.99
+    },
+    {
+      "picture": "https://i.postimg.cc/Kj0hb5TV/russian-language-words.png",
+      "name": "Russian Language Crash Course",
+      "instructorName": "Ivan Petrov",
+      "availableSeats": 15,
+      "price": 34.99
+    },
+    {
+      "picture": "https://i.postimg.cc/bwbVHTJh/60-e1671191104892-jpg.webp",
+      "name": "Arabic for Travelers",
+      "instructorName": "Layla Khalid",
+      "availableSeats": 18,
+      "price": 24.99
+    }
+  ]
