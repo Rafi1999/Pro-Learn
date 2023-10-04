@@ -6,7 +6,7 @@ const Footer = () => {
             <div className="footer p-6 md:p-10 bg-slate-400 text-black">
                 <div>
                     <FaCode className="text-5xl mb-[-17px]"></FaCode>
-                    <p className="text-lg md:text-xl">Pro-Learn Programming Language Learning Hub<br /></p>
+                    <p className="text-lg md:text-xl">Pro-Learn Skill Developing Hub<br /></p>
                     <p className="font-medium">Contact Us : Pro-learn@gmail.com</p>
                     <p className="font-medium">Address : Chittagong,Bangladesh</p>
                 </div>

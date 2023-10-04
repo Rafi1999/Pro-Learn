@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 const Classes = () => {
     const [classes, setClasses] = useState([]);
     useEffect(()=>{
-        fetch('https://golingo-server.vercel.app/class/all')
+        fetch('http://localhost:5000/class/all')
         .then(res=>res.json())
         .then(data=>{
             setClasses(data);
