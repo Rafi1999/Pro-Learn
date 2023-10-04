@@ -1,11 +1,16 @@
 import { Link, NavLink } from "react-router-dom";
-import { FaCode, FaShoppingCart } from 'react-icons/fa';
+import { FaChalkboardTeacher, FaCode, FaShoppingCart } from 'react-icons/fa';
+import { GrUserAdmin } from 'react-icons/gr';
 import { useContext } from "react";
 import { AuthContext } from "../../../Providers/AuthProvider";
 import ViewMode from "../ViewMode/ViewMode";
 import useSelect from "../../../hooks/useSelect";
+import useAdmin from "../../../hooks/useAdmin";
+import useInstructor from "../../../hooks/useInstructor";
 const Navbar = () => {
     const {user,logOut} = useContext(AuthContext);
+    const [isAdmin] = useAdmin();
+  const [isInstructor] = useInstructor();
     const [ selected ] = useSelect();
     const handleLogOut = () =>{
         logOut()
@@ -44,7 +49,7 @@ const Navbar = () => {
       </NavLink>
     </li>
         { user ? <li><Link to="/dashboard/dashHome"><button className="btn gap-2 ">
-  <FaShoppingCart></FaShoppingCart>
+  {isAdmin ? <GrUserAdmin></GrUserAdmin> : isInstructor ? <FaChalkboardTeacher></FaChalkboardTeacher> : <FaShoppingCart></FaShoppingCart>}
   <div className="badge badge-secondary">+{selected?.length || 0}</div>
 </button></Link></li> : <Link to='login'><button className="btn gap-2 ">
   <FaShoppingCart></FaShoppingCart>
