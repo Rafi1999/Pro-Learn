@@ -10,7 +10,7 @@ const useEnrolled = () => {
         queryKey: ['enrolled', user?.email],
         enabled : !loading,
         // queryFn: async()=>{
-        //     const response = await fetch(`https://golingo-server.vercel.app/enrolled?email=${user?.email}`,{
+        //     const response = await fetch(`http://localhost:5000/enrolled?email=${user?.email}`,{
         //         headers : {
         //             authorization : `bearer ${token}`
         //         }

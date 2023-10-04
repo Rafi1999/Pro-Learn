@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { FaCode, FaShoppingCart } from 'react-icons/fa';
 import { useContext } from "react";
 import { AuthContext } from "../../../Providers/AuthProvider";
@@ -14,10 +14,35 @@ const Navbar = () => {
         })
         .catch(err=>{console.log(err);})
     }
-    const navOptions = <div className=" md:flex items-center">
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/instructors">Instructors</Link></li>
-        <li><Link to="/classes">Classes</Link></li>
+    const navOptions = <div className="md:flex items-center">
+        <li>
+      <NavLink
+        to="/"
+        exact
+        activeClassName="text-red-500 bg-gray-100" // Customize these classes
+        className="hover:text-gray-700"
+      >
+        Home
+      </NavLink>
+    </li>
+    <li>
+      <NavLink
+        to="/classes"
+        activeClassName="text-red-500 bg-gray-100" // Customize these classes
+        className="hover:text-gray-700"
+      >
+        Classes
+      </NavLink>
+    </li>
+    <li>
+      <NavLink
+        to="/instructors"
+        activeClassName="text-red-500 bg-gray-100" // Customize these classes
+        className="hover:text-gray-700"
+      >
+        Instructors
+      </NavLink>
+    </li>
         { user ? <li><Link to="/dashboard/dashHome"><button className="btn gap-2 ">
   <FaShoppingCart></FaShoppingCart>
   <div className="badge badge-secondary">+{selected?.length || 0}</div>
@@ -28,7 +53,7 @@ const Navbar = () => {
     </div>
     return (
         <>
-        <div className="navbar fixed z-10 bg-opacity-20 max-w-screen-xl bg-black text-white md:h-20">
+        <div className="navbar fixed z-10 bg-opacity-40 max-w-screen-xl bg-black text-white  md:h-20">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">

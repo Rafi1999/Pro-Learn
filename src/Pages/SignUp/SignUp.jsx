@@ -22,7 +22,7 @@ const SignUp = () => {
         updateUserProfile(data.name, data.photoURL)
           .then(() => {
             const saveUser = {name : data.name, email : data.email, picture : data.photoURL, role: "student"};
-            fetch('https://golingo-server.vercel.app/users',{
+            fetch('http://localhost:5000/users',{
               method : 'POST',
               headers : {
                 'content-type' : 'application/json'
@@ -45,7 +45,7 @@ const SignUp = () => {
               })
 
             // const saveUser = { name: data.name, email: data.email }
-            // fetch('https://golingo-server.vercel.app/users', {
+            // fetch('http://localhost:5000/users', {
             //     method: 'POST',
             //     headers: {
             //         'content-type': 'application/json'

@@ -43,7 +43,7 @@ const AuthProvider = ({ children }) => {
             console.log(currentUser);
             //get and set token
             if (currentUser) {
-                axios.post('https://golingo-server.vercel.app/jwt', {
+                axios.post('http://localhost:5000/jwt', {
                     email: currentUser.email,
                 })
                 .then(data=>{

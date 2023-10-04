@@ -23,7 +23,7 @@ const ManageClass = ({ Class, index , refetch}) => {
   const userStatusDataFetch = (user, status) => {
     
     axios
-      .patch(`https://golingo-server.vercel.app/add_class/${user._id}`, {
+      .patch(`http://localhost:5000/add_class/${user._id}`, {
         status: status,
       })
       .then((res) => {
@@ -53,7 +53,7 @@ const ManageClass = ({ Class, index , refetch}) => {
 
     userStatusDataFetch(user,"denied")
     // axios
-    //   .patch(`https://golingo-server.vercel.app/add_class/${user._id}`, {
+    //   .patch(`http://localhost:5000/add_class/${user._id}`, {
     //     status: "deny",
     //   })
     //   .then((res) => {

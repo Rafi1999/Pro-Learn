@@ -21,7 +21,7 @@ const Class = ({ classItem }) => {
     console.log(classItem);
     if (user && user.email) {
       const selectedClass = { selectedId: _id, name, picture, price, email: user.email,availableSeats,instructorName,instructorEmail,instructorPic}
-      axios.post(`https://golingo-server.vercel.app/selected`, selectedClass, {
+      axios.post(`http://localhost:5000/selected`, selectedClass, {
         headers: {
           'content-type': 'application/json'
         },

@@ -6,7 +6,7 @@ const ManageClass =({Class,index,refetch}) => {
     const {name,picture,instructorName,instructorEmail,availableSeats,price,status} = Class;
     // console.log(index);
     const handleApprove = Class => {
-        fetch(`https://golingo-server.vercel.app/class/approve/${Class._id}`, {
+        fetch(`http://localhost:5000/class/approve/${Class._id}`, {
           method: 'PATCH'
         })
           .then(res => res.json())
@@ -24,7 +24,7 @@ const ManageClass =({Class,index,refetch}) => {
           })
       }
     const handleDeny = Class => {
-        fetch(`https://golingo-server.vercel.app/class/deny/${Class._id}`, {
+        fetch(`http://localhost:5000/class/deny/${Class._id}`, {
           method: 'PATCH'
         })
           .then(res => res.json())
@@ -54,7 +54,7 @@ const ManageClass =({Class,index,refetch}) => {
             showLoaderOnConfirm: true,
             preConfirm: async (feedback) => {
               try {
-                const response = await fetch(`https://golingo-server.vercel.app/class/feedback/${Class._id}`, {
+                const response = await fetch(`http://localhost:5000/class/feedback/${Class._id}`, {
                   method: 'PATCH',
                   headers: {
                     'Content-Type': 'application/json',
@@ -110,7 +110,7 @@ const ManageClass =({Class,index,refetch}) => {
     //             allowOutsideClick: () => !Swal.isLoading()
     //           }).then((result) => {
     //             if (result.isConfirmed) {
-    //                 fetch(`https://golingo-server.vercel.app/class/feedback/${Class._id}`, {
+    //                 fetch(`http://localhost:5000/class/feedback/${Class._id}`, {
     //                     method: 'PATCH'
     //                   })
     //             }

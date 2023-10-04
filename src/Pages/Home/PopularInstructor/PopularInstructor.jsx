@@ -28,7 +28,7 @@ const PopularInstructor = () => {
     };
     return (
         <div className='mt-10 md:mt-10'>
-        <h2 className='text-center txt-xl md:text-3xl uppercase border-y-4 py-2 md:py-4 text-yellow-400'>Popular Instructors</h2>
+        <h2 className='text-center txt-xl md:text-3xl uppercase border-y-4 py-2 md:py-4 text-yellow-400'>Our Instructors</h2>
              <Swiper
           spaceBetween={30}
           centeredSlides={true}
