@@ -7,10 +7,10 @@ Top Features :
 4. User can view all class but to select class they have to login first.
 5. Private Route is implemented on pages.
 6. Dashboard is implemented and it will show depending on the type of user.
-7. Payment is implemented.
-8. Instructor functionality added.
-9. Admin functionality added.
-10. Website is made secured in every end.
+7. Instructor functionality added.
+8. Admin functionality added.
+9. Website is made secured in every end.
+10. All 3 panels have their own unique functionality.
 
 Used Packages : 
 1. Client-Side : React,Stripe,Tanstack,Axios,Firebase,Swiper,Tailwind,daisyUi,sweetalert,sort-by,react-icons,react-helmet,react-dom
