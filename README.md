@@ -16,4 +16,4 @@ Used Packages :
 1. Client-Side : React,Stripe,Tanstack,Axios,Firebase,Swiper,Tailwind,daisyUi,sweetalert,sort-by,react-icons,react-helmet,react-dom
 2. Server-Side : Vercel,MongoDb,Express,JsonWebToken,Stripe,Cors.
    
-#live link : https://go-lingo.web.app/ 
+#live link : https://pro-lingo.web.app 

@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "pro-learn"
-  }
+    "default": "pro-lingo",
+    "staging": "pro-lingo"
+  },
+  "targets": {},
+  "etags": {}
 }

@@ -10,7 +10,7 @@ const useEnrolled = () => {
         queryKey: ['enrolled', user?.email],
         enabled : !loading,
         // queryFn: async()=>{
-        //     const response = await fetch(`http://localhost:5000/enrolled?email=${user?.email}`,{
+        //     const response = await fetch(`https://pro-learn-server-lemon.vercel.app/enrolled?email=${user?.email}`,{
         //         headers : {
         //             authorization : `bearer ${token}`
         //         }

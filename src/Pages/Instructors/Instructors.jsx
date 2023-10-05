@@ -7,7 +7,7 @@ const Instructors = () => {
     
     const [instructors, setInstructors] = useState([]);
     useEffect(()=> {
-      fetch('http://localhost:5000/users/ins')
+      fetch('https://pro-learn-server-lemon.vercel.app/users/ins')
       .then(res => res.json())
       .then(info => setInstructors(info));
     }, []);

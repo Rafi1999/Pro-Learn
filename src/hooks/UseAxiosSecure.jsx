@@ -8,7 +8,7 @@ const useAxiosSecure = () => {
   const { logOut } = useContext(AuthContext);
 
   const axiosSecure = axios.create({
-    baseURL: 'http://localhost:5000', 
+    baseURL: 'https://pro-learn-server-lemon.vercel.app', 
   });
 
   useEffect(() => {

@@ -15,7 +15,7 @@ import { Link } from 'react-router-dom';
 const PopularInstructor = () => {
   const [popular, setPopular] = useState([]);
   useEffect(()=> {
-    fetch('http://localhost:5000/class/all')
+    fetch('https://pro-learn-server-lemon.vercel.app/class/all')
     .then(res => res.json())
     .then(info => setPopular(info));
   }, []);

@@ -19,7 +19,7 @@ const AddClass = () => {
     formState: { errors },
   } = useForm();
   const [isInstructor] = useInstructor();
-  const add_class_url = "http://localhost:5000/class";
+  const add_class_url = "https://pro-learn-server-lemon.vercel.app/class";
 
   const onSubmit = (data) => {
     data.instructorPic = user.photoUrl;

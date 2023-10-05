@@ -49,8 +49,7 @@ const Navbar = () => {
       </NavLink>
     </li>
         { user ? <li><Link to="/dashboard/dashHome"><button className="btn gap-2 ">
-  {isAdmin ? <GrUserAdmin></GrUserAdmin> : isInstructor ? <FaChalkboardTeacher></FaChalkboardTeacher> : <FaShoppingCart></FaShoppingCart>}
-  <div className="badge badge-secondary">+{selected?.length || 0}</div>
+  {isAdmin ? <GrUserAdmin></GrUserAdmin> : isInstructor ? <FaChalkboardTeacher></FaChalkboardTeacher> :<div className="flex justify-center items-center gap-3"><FaShoppingCart></FaShoppingCart> <div className="badge badge-secondary">+{selected?.length || 0}</div></div> }
 </button></Link></li> : <Link to='login'><button className="btn gap-2 ">
   <FaShoppingCart></FaShoppingCart>
   <div className="badge badge-secondary">+{selected?.length || 0}</div>

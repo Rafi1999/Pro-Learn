@@ -21,7 +21,7 @@ const InstructorUpdate = () => {
     useEffect(() => {
         const instructorClassLoad = async () => {
             const res = await axios.get(
-                `http://localhost:5000/class/ins/${InstructorClassID?.id}`
+                `https://pro-learn-server-lemon.vercel.app/class/ins/${InstructorClassID?.id}`
             );
             const data = res.data;
             setUpdated(data[0]);
@@ -30,7 +30,7 @@ const InstructorUpdate = () => {
         instructorClassLoad();
     }, []); // empty dependency array ensures it runs only once
 
-    const update_class_url = `http://localhost:5000/class/ins/${InstructorClassID?.id}`;
+    const update_class_url = `https://pro-learn-server-lemon.vercel.app/class/ins/${InstructorClassID?.id}`;
 
     const onSubmit = (data) => {
         // Convert availableSeats and price to numbers

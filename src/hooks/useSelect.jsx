@@ -10,7 +10,7 @@ const useSelect = () => {
         queryKey: ['selected', user?.email],
         enabled : !loading,
         // queryFn: async()=>{
-        //     const response = await fetch(`http://localhost:5000/selected?email=${user?.email}`,{
+        //     const response = await fetch(`https://pro-learn-server-lemon.vercel.app/selected?email=${user?.email}`,{
         //         headers : {
         //             authorization : `bearer ${token}`
         //         }
