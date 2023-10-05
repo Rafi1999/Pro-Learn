@@ -1,6 +1,6 @@
 {
   "projects": {
-    "default": "pro-lingo",
+    "default": "pro-learn",
     "staging": "pro-lingo"
   },
   "targets": {},
